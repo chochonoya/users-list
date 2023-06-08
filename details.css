@@ -1,13 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+.menu1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 20vh;
+  background: black;
+  border-bottom: 1px gray solid;
+}
+
+.logo {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 35px;
+  color: white;
+}
+
+.logoMini {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 11px;
+  color: white;
+}
+
+.link_1 {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-right: 15px;
+  font-size: 15px;
+}
+
+.link_1:hover {
+  cursor: pointer;
+  color: rgba(210, 136, 136, 1);
+}
+
+#userContainer {
+  height: 70vh;
+  background-color: black;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
 .card {
   height: 300px;
-  width: 400px;
+  width: 300px;
   border: solid 2px black;
   display: flex;
   flex-direction: column;
   align-items: center;
   border-radius: 50px;
   box-shadow: 23px 8px 11px 0px rgba(0, 0, 0, 0.12);
-  background-color: salmon;
+  background: radial-gradient(
+    circle,
+    rgba(197, 82, 72, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  color: white;
   gap: 5px;
 }
 .card h1 {
